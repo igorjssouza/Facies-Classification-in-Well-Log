@@ -1,1 +1,11 @@
 .ipynb_checkpoints
+canada_cross_plot.pdf
+canada_features_chart_values.pdf
+canada_missingdata.pdf
+canada_number_blind_samples.pdf
+canada_number_training_samples.pdf
+canada_performance_evaluation_blind_data.pdf
+canada_performance_evaluation_test_data.pdf
+weights*
+__pycache__/
+Well logs abbreviation description.xlsx
