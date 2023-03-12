@@ -101,12 +101,11 @@ class DataView():
         for i in range(0,len(self.df[feaature_name])):
             self.df[feaature_name][i] = name_before + "{}".format(self.df[feaature_name][i])
             
-    def select_data(self, well_name, sitID = 'SitID'):
+    def select_data(self, well_name, sitID = 'Name Feature'):
         empty_df = []
         for name in well_name:
             empty_df.append(self.df[self.df[sitID] == name])
         return pd.concat(empty_df).reset_index(drop=True)
-    
 
         
         
