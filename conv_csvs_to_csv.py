@@ -13,6 +13,7 @@ def import_csv_files(folder_path):
     for csv_file in csv_files:
         file_path = os.path.join(folder_path, csv_file)
         df = pd.read_csv(file_path)
+        df = df[df != -9999].dropna()
         dataframes.append(df)
 
     # Concatenate all DataFrames in the list into a single DataFrame
